@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(198, 227, 236);
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: teal;
+
+        }
+
+        nav {
+            background-color: teal;
+            padding: 0px;
+        }
+
+        ul {
+            background-color: teal;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+            flex-wrap: nowrap;
+            height: 40px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        li>a {
+            text-decoration: none;
+            color: white;
+            width: 50px;
+            height: 30px;
+            padding: 10px 20px;
+        }
+
+        li>a:hover {
+            background-color: rgb(0, 82, 82);
+        }
+
+        h1,
+        h2 {
+            padding: 18px 0px;
+            color: teal;
+            text-align: center;
+        }
+        .product{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding-top: 25px;
+        }
+        .products {
+            background-color: white;
+            margin: 10px 50px;
+            padding: 15px 25px;
+        }
+        img{
+            height: 150px;
+        }
+        .product1, .product2, .product3{
+            text-align: center;
+        }
+        h3{
+            padding: 10px 0px;
+        }
+        footer{
+            margin-top: 20px;
+            background-color: teal;
+            padding: 15px;
+            justify-content: center;
+            align-items: center ;
+        }
+        center>img{
+            height:40px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .lang{
+            background-color: red;
+            margin-right: 10px;
+            padding: 0px 5px;
+        }
+        .lang:hover{
+            transition: all 0.4s ease;
+            background-color: white;
+            color: red;
+        }
+        .guage:hover, .guage>:hover{
+            transition: all 0.4s ease;
+            background-color: black;
+            color: white;
+        }
+        button{
+            border: none;
+            height: 30px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="miniproject.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="products">
+
+            <h2>Explore Our Collection</h2>
+            <p>We offer a diverse range of products to meet your needs.
+                check out our featured products below.
+            </p>
+
+            <div class="product">
+                <div class="product1">
+                    <img src="img/mobile.jpg" alt="">
+                    <h3>Redmi</h3>
+                    <p>Short description of Product 1</p>
+                    <button class="lang" onclick=" alert(`Bought Successfully`)"><a href="">Buy Now</a></button>
+                    <button class="guage" onclick=" alert(`Added to Cart`)"><a href="">Add to Cart</a></button>
+                </div>
+                <div class="product2">
+                    <img src="img/mobile1.jpg" alt="">
+                    <h3>Iphone 16</h3>
+                    <p>Short description of Product 2</p>
+                    <button class="lang" onclick=" alert(`Bought Successfully`)"><a href="">Buy Now</a></button>
+                    <button class="guage" onclick=" alert(`Added to Cart`)"><a href="">Add to Cart</a></button>
+                </div>
+                <div class="product3">
+                    <img src="img/laptop.jpg" alt="">
+                    <h3>Hp Laptop</h3>
+                    <p>Short description of Product 3</p>
+                    <button class="lang" onclick=" alert(`Bought Successfully`)"><a href="">Buy Now</a></button>
+                    <button class="guage" onclick=" alert(`Added to Cart`)"><a href="">Add to Cart</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <center>
+        <img src="img/logo.jpg" alt="">
+    </center>
+        <p>&copy; 2024 Shopping Hub. All rights reserved</footer></p>
+</body>
+
+</html>
